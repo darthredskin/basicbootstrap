@@ -20,7 +20,7 @@ a:hover {
 .btn-default:focus {
   color: #333;
   text-shadow: none; /* Prevent inheritence from `body` */
-  background-color: #fff;
+  background-color: #transparent;
   border: 1px solid #fff;
 }
 
@@ -82,7 +82,7 @@ body {
   display: inline-block;
 }
 .masthead-nav > li + li {
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .masthead-nav > li > a {
   padding-right: 0;
@@ -111,7 +111,7 @@ body {
     float: left;
   }
   .masthead-nav {
-    float: left;
+    float: right;
   }
 }
 

@@ -82,7 +82,7 @@ body {
   display: inline-block;
 }
 .masthead-nav > li + li {
-  margin-left: 20px;
+  margin-left: 10px;
 }
 .masthead-nav > li > a {
   padding-right: 0;
@@ -111,7 +111,7 @@ body {
     float: left;
   }
   .masthead-nav {
-    float: right;
+    float: left;
   }
 }
 

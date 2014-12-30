@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<title>Post a Secret</title>
+<script type="text/javascript">
+$('.navbar').ready(function () {
+	$('#navSubmit').attr('class', 'active');
+});
+</script>
+
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<script type="text/javascript" src="/inc/js/glb.js?130506"></script>
+	<script type="text/javascript" src="/inc/js/bootstrap.min.js"></script>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css" rel="stylesheet">
+	<link href="/inc/css/glb.css?130506" rel="stylesheet">
+</head>
+<body>
+	<div class="navbar navbar-fixed-top">
+		<div class="navbar-frame">
+			<div class="container">
+				<a class="site-logo" href="/"><img alt="SecretTalk.com" src="/img/site_logo_en.png?130503"></a>
+				<div>
+					<ul id="navMain" class="nav">
+						<li id="navVotes"><a href="/">Hot</a></li>
+						<li id="navNew"><a href="/new">Newest</a></li>
+						<li id="navSubmit"><a href="/post"><i class="icon-edit"></i> Submit</a></li>
+					</ul>
+
+					<ul class="nav pull-right">
+						<li id="btnSiteSearch"><a href="#"><i class="icon-search icon-large"></i></a></li>
+							<li><a class="visible-desktop" href="/login" target-mode="modal">Login</a></li>
+	<li><a class="visible-desktop" href="/signup" target-mode="modal">Sign Up</a></li>
+	<li><a class="hidden-desktop" href="/signup" target-mode="modal"><i class="icon-user icon-large"></i></a></li>
+
+					</ul>
+					<form action="/search" mode="traditional" class="site-search navbar-form pull-right">
+						<a id="btnCloseSearch" href="#"><i class="icon-remove-sign icon-large"></i></a>
+						<input name="q" placeholder="Search" class="span3" type="text">
+					</form>
+
+				</div>
+			</div>
+		</div>
+	</div>
+    <div class="container">
+	<div id="win">
+		<form accept-charset="UTF-8" action="/posts" class="new_post" id="new_post" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="/CGRw8gg7TyrCJtUinBM2ndTHfbhAM5046jtIl+aM3k=" /></div>
+			<div>
+				<label>Title of your story</label>
+				<label class="muted">Be <strong>descriptive</strong>, avoid using excessive punctuations, must contain at least 3 words.</label>
+				<input class="input-xxlarge" id="post_subject" maxlength="70" name="post[subject]" size="70" type="text" />
+			</div>
+			<div>
+				<label>Your story</label>
+				<label class="muted">Please state your story <strong>clearly</strong>. Story must contain at least 20 words.</label>
+				<textarea class="input-xxlarge" cols="40" id="post_content" name="post[content]" rows="12">
+</textarea>
+			</div>
+			<div>
+				<label class="checkbox ">
+									<input name="post[anonymous]" type="hidden" value="0" /><input id="post_anonymous" name="post[anonymous]" type="checkbox" value="1" />
+									Post anonymously (Hide your username)
+				</label>
+				<label class="checkbox ">
+									<input name="post[disallow_comments]" type="hidden" value="0" /><input id="post_disallow_comments" name="post[disallow_comments]" type="checkbox" value="1" />
+									Disallow other people comment on this article (NOT Recommended)
+				</label>
+			</div>
+			<div>
+				<input class="btn btn-success" name="commit" type="submit" value="Submit" />
+			</div>
+</form>	</div>
+
+</div>
+    <footer class="footer">
+    	<div class="container">
+    		<ul class="list-horizontal">
+					<li><a href="/info/faq">FAQ</a><span class="divider">|</span></li>
+					<li><a href="/info/rules">Community Rules</a><span class="divider">|</span></li>
+					<li><a href="/info/contact">Contact</a><span class="divider">|</span></li>
+					<li><a href="/directory/years">Directory</a><span class="divider">|</span></li>
+					<li><a href="/info/privacy">Privacy Policy</a></li>
+    		</ul>
+    		<p>&copy; 2007-2014 SecretTalk.com</p>
+    	</div>
+    </footer>
+    </body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-60121-7']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</html>
